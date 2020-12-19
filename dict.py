@@ -54,6 +54,6 @@ if __name__ == '__main__':
 #dict1={'Wei':2222,'Jonny':33373,'Ahbi':55553} 
 #print(type(*dict1))
     homework()
-    print("________________")
+    print("___________sdfasdfasdf_____")
     homework2()
     #update_dict()

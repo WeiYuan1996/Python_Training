@@ -53,7 +53,7 @@ def dict_slicing():
 if __name__=='__main__':
 #	dict_pass(name='Abhi',experience=3,gender='Male')
 	dict_slicing()
-	print("This is another Python program")
+
 
 
 

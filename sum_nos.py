@@ -29,7 +29,7 @@ def sum(a):
     for i in range(1,a+1):
         s = s+i
     print(s)
-
+#Python file
 
 if __name__ == '__main__':
     m = int(input("Enter a number of your choice: "))

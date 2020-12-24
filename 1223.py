@@ -6,7 +6,7 @@
 
 #Binary Search:
 a = []
-for i in range(21, 100):
+for i in range(1,10):
     a.append(i)
 
 
@@ -21,7 +21,7 @@ def bin(a,b):
     if mid_point == b:
         print(c.index(b))
     elif b < mid_point:
-        a = a[0:len(a)//2 -1]
+        a = a[0:len(a)//2-1]
         return bin(a,b)
 
     elif b > mid_point:

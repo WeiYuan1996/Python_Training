@@ -47,7 +47,7 @@ class credit_card:
 class child_credit_card(credit_card):
     def __init__(self,cust,bank,accnt,blnc,blnc_limit,cvv,int_per):
 #Initialize the base class from the child class
-        super().__init__(cust,bank,accnt,blnc,blnc_limit,cvv)
+        super().__init__(self,cust,bank,accnt,blnc,blnc_limit,cvv)
         self._int_per=int_per
 
     def get_int_per(self):

@@ -54,11 +54,25 @@ class CreditCard:
     
     def cal_pay(self,payment):
         self._blnc -= payment
-        
+
+class ChildCreditCard(CreditCard):
+    
+    def __init__(self,cust,bank,accnt,blnc,blnc_limit,cvv,itst):
+        super().__init__(self,cust,bank,accnt,blnc,blnc_limit,cvv)
+        self.itst =itst
+
+    def get_itst(self):
+        return self.itst
+
+    def cal_deposit(self,deposit):
+        success=super().cal_deposit(deposit)
+            if not success:
+                self.blnc-=5
+            return success
 
 if __name__=='__main__':
 # Object creation (start with obj_)
-    obj_credit_card1 = CreiditCard()
+"""    obj_credit_card1 = CreiditCard()
     print(obj_credit_card1.get_blnc())
     #obj_credit_card = CreditCard('Kobe','Chase','134134315',1,341,12000)
     print(obj_credit_card.get_cust())
@@ -70,6 +84,7 @@ if __name__=='__main__':
     obj_credit_card.cal_pay(a)
     print(obj_credit_card.get_blnc())
 
-
-
+"""
+    obj_child_credit_card=ChildCreditCard('Kobe','Chase','134134315',1,341,12000,0.8)
+    obj_child_credit_card.get_itst
 

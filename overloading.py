@@ -16,7 +16,10 @@ if __name__=='__main__':
     objLoad=OverLoad(y)
     objOver2=OverLoad(z)
     objOver3= OverLoad(w)
-    print(objOver+objLoad)
+    result = objOver+objLoad2
+    ojOverSum = Overload(result)
+    print(ojOverSum+objOver2
+    print(objOver+objLoad3)
     print(objOver+objLoad+objOver2)
     print(len(
 
